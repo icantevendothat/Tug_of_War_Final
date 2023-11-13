@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tug of War</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/tugicon.png">
+</head>
+<body>
+  <div id="play" class="play">
+    <a href="gameplay.html">
+    <button class="playb" id="playbutton">
+        <img src="images/playbutton.png" />
+      </button>
+        <audio id="buttonClickSound" src="sounds/gamebuttonclick.mp3"></audio>
+    
+</a>
+</div>
+<div id="rules" class="rules">
+  <button class="playb" id="rulesb" onclick="openPopup()">
+      <img src="images/instructionsbutton.png" />
+    </button>
+      <audio id="rulesClickSound" src="sounds/gamebuttonclick.mp3"></audio>
+</div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Instructions</h2>
+  <p>Click on your assigned arrow key as fast as you can within a 30-second time frame to pull the rope to your side. The player with the most clicks at the end of the timer wins the game. Here's how to play
+
+      Setup:
+      *  Choose your user or character.
+      *  Make sure you have a clear understanding of your assigned arrow key. 
+      *  You will be competing against an opponent who will be using a different arrow key.
+      Gameplay:
+      * Once you have selected your user and the game starts, the 30-second timer will begin counting down. May the strongest player win! 
+      </p>
+  
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
